@@ -1,0 +1,16 @@
+footer{
+    height: 30px;
+    width: 100%;
+    background-color: goldenrod;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pFooter{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}

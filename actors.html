@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dom" href="actors.js">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="peliculas.css">
+    <link rel="stylesheet" href="actors.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body onload="showActor()">
+    <div class="bigContainer">
+        <div class="smallContainer1">
+            <a class="linkH1" href="imdb.html">
+                <h1>IMDB</h1>
+            </a>
+        </div>
+        <div class="smallContainer2">
+            <a class="enlacesNav" href="./peliculas.html">Peliculas</a>
+            <a class="enlacesNav" href="">Profesionales</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="actorContainer">
+            <!--Aquí el container donde van a ir las cards con los actores-->
+        </div>
+    </div>
+
+    <div class="containerForm">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Photo</label>
+                <input type="text" class="form-control" id="photo" aria-describedby="Photo" placeholder="Add here your URL">
+
+                <label for="Title" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+
+                <label for="Title" class="form-label">Age </label>
+                <input type="number" class="form-control" id="age">
+
+                <label for="Title" class="form-label">Weight:</label>
+                <input type="number" class="form-control" id="weight" placeholder="weight in kg">
+
+                <label for="Title" class="form-label">Height</label>
+                <input type="number" class="form-control" id="height" placeholder="height in cm">
+
+                <label for="Title" class="form-label">Is retired?:</label>
+                <input type="boolean" class="form-control" id="retired">
+
+                <label for="Title" class="form-label">Nationality:</label>
+                <input type="text" class="form-control" id="nationality">
+
+                <label for="Title" class="form-label">Number of Oscars:</label>
+                <input type="number" class="form-control" id="oscars">
+
+                <label for="Title" class="form-label">Profession:</label>
+                <input type="text" class="form-control" id="profession">
+            </div>      
+            <div class="buttonContainer">
+                <button type="button" class="button" onclick="addActor()">Add actor</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        <p class="pFooter">© IMDB todos los derechos reservados 2024</p>
+    </footer>
+    <script src="actors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
